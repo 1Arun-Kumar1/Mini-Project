@@ -7,14 +7,10 @@ p=fopen("Srm.dat","r");
 int sno,m1,m2,m3,m4,m5,tot;
 float avg;  
 char name[100];
-//fscanf(p,"%20s%5d%5d%5d%5d%5d%5d",&sno,name,&m1,&m2,&m3,&m4,&m5);
 while(feof(p)==0)
 {    int t;
 
 fscanf(p,"%20s%5d%5d%5d%5d%5d%5d",name,&sno,&m1,&m2,&m3,&m4,&m5);
-//printf("Enter the student number you want:");
-  //   scanf("%d",&t);
-    // if(sno==t){
 	 
 	tot=m1+m2+m3+m4+m5;
     avg=tot/5;
@@ -59,10 +55,6 @@ printf("None\n");
 
 printf("                    ------------------------------------------------------\n");
 printf("\n");
-//}
-//else
-//{printf("Invalid\n");
-//}
 }
 fclose(p);
 return 0;}
